@@ -9,5 +9,5 @@ In conclusion, our proposed model can help clinicians early identify patients at
 
 </div>
 
-![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+![TopoTransformers Schema](https://github.com/MorillaLab/TopoTransformers/blob/main/Figure_1.png)https://github.com/MorillaLab/TopoTransformers/blob/main/Figure_1.png)
 
