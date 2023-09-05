@@ -8,4 +8,6 @@ Furthermore, we proposed a model for mortality risk prediction after Y1 of lung 
 In conclusion, our proposed model can help clinicians early identify patients at high risk of mortality after Y1 of lung transplantation and provide timely interventions to improve outcomes.
 
 </div>
-![Overview of Topological Transformers and Their Application in Identifying High-Risk Mortality in Year One After Lung Transplantation](https://github.com/MorillaLab/TopoTransformers/blob/main/Topo_Transf_Overview.pdf)
+
+![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+
