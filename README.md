@@ -1,5 +1,10 @@
 # TopoTransformers
 <div style="text-align: justity;">
+<p align="left">
+  <a href="https://choosealicense.com/licenses/gpl-3.0/">
+    <img src="https://img.shields.io/badge/License-GPLv3-green" alt="">
+  </a>
+</p>
   
 Early Identification of High-Risk Individuals for Mortality after Lung Transplantation: A Retrospective Cohort Study with Topological Transformers
 
