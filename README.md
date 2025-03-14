@@ -4,7 +4,9 @@
   <a href="https://choosealicense.com/licenses/gpl-3.0/">
     <img src="https://img.shields.io/badge/License-GPLv3-green" alt="">
   </a>
-  [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
+  <a href="https://jupyter.org/try/">
+    <img src="https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter" alt="">
+  </a>
   
 </p>
   
