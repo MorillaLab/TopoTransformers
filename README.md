@@ -4,7 +4,7 @@
   <a href="https://choosealicense.com/licenses/gpl-3.0/">
     <img src="https://img.shields.io/badge/License-GPLv3-green" alt="">
   </a>
-  <a href="https://colab.research.google.com/MorillaLab/TopoTransformers">
+  <a href="https://github.com/MorillaLab/TopoTransformers/">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="">
   </a>
   
