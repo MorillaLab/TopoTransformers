@@ -4,7 +4,8 @@
   <a href="https://choosealicense.com/licenses/gpl-3.0/">
     <img src="https://img.shields.io/badge/License-GPLv3-green" alt="">
   </a>
-  https://colab.research.google.com/drive/1PxshEMwNm4tLu8f_Bz_Z0emUlC1TPob4?usp=sharing
+  [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
+  
 </p>
   
 Early Identification of High-Risk Individuals for Mortality after Lung Transplantation: A Retrospective Cohort Study with Topological Transformers
