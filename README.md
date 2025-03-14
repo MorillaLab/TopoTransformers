@@ -3,8 +3,8 @@
 <p align="left">
   <a href="https://choosealicense.com/licenses/gpl-3.0/">
     <img src="https://img.shields.io/badge/License-GPLv3-green" alt="">
-
-  <a href="https://colab.research.google.com/github/Naereen/badges/">
+  </a>
+  <a href="https://colab.research.google.com/">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="">
   </a>
   
