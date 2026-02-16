@@ -1,6 +1,6 @@
-# TopoTransformers
+# TopoAttention
 [![License](https://img.shields.io/badge/License-GPLv3-green)](https://choosealicense.com/licenses/gpl-3.0/)
-[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/MorillaLab/TopoTransformers/)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/MorillaLab/TopoAttention/)
   
 Early Identification of High-Risk Individuals for Mortality after Lung Transplantation: A Retrospective Cohort Study with Topological Feature Engineering
 
