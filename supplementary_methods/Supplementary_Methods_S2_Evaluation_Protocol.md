@@ -87,18 +87,30 @@ PPV (Precision)	TP / (TP + FP)	Youden's index
 NPV	TN / (TN + FN)	Youden's index
 
 F1-score	2 × (Precision × Recall) / (Precision + Recall)	Youden's index
+
 ROC-AUC	Area under ROC curve	Threshold-independent
+
 PR-AUC	Area under precision-recall curve	Threshold-independent
+
 Calibration Metrics
+
 Metric	Formula	Value
+
 Brier score	(1/N) Σ (y_pred - y_true)²	0.12
+
 ECE	Σ	P(k) - O(k)	× (n_k / N)	0.08
+
 Calibration slope	β from logit(y_true) ~ β × logit(y_pred)	0.91
+
 Calibration intercept	α from logit calibration	-0.15
+
 Decision Curve Analysis
+
 Net benefit at threshold t:
  Net Benefit = (TP/N) - (FP/N) × (t/(1-t))
+
 5. Bootstrap Confidence Intervals
+
 Procedure for each metric:
 
 For each outer fold test set (n ≈ 50):
@@ -114,25 +126,45 @@ Calculate 2.5th and 97.5th percentiles for 95% CI
 Report mean across folds ± bootstrap SE
 
 5. Statistical Tests
+
 Comparison	Test	Adjustment
+
 Model vs baseline	DeLong test for AUC	-
+
 Subgroup heterogeneity	Cochran's Q test	-
+
 Feature importance	Cohen's d with 95% CI	BH-FDR q<0.05
+
 Paired comparisons	Paired t-test (cross-validation folds)	-
+
 6. Software and Packages
+
 Package	Version	Purpose
+
 Python	3.9.0	Core language
+
 numpy	1.21.0	Numerical computing
+
 pandas	1.3.0	Data manipulation
+
 scikit-learn	1.0.0	Machine learning
+
 phate	1.0.11	Manifold learning
+
 giotto-tda	0.5.1	Topological analysis
+
 GUDHI	3.7.0	Persistent homology
+
 shap	0.40.0	Model interpretability
+
 matplotlib	3.4.0	Visualization
+
 seaborn	0.11.0	Statistical visualization
+
 scipy	1.7.0	Statistical tests
+
 7. Reproducibility Checklist
+
 Random seeds fixed (42)
 
 Nested cross-validation implemented
@@ -158,8 +190,13 @@ Code publicly available
 Synthetic data for validation
 
 8. Code Availability
+
 git clone https://github.com/MorillaLab/TopoAttention
+
 cd TopoTransformers
+
 conda env create -f environment.yml
+
 conda activate topo_lung
+
 python run_analysis.py --seed 42 --cv 5 --bootstrap 2000
