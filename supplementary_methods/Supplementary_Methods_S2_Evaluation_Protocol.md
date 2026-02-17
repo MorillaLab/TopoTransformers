@@ -36,32 +36,56 @@ Feature selection performed within inner loop only
 No information from test sets used at any stage
 
 2. Hyperparameter Tuning Grid
+
 MLP Architecture
+
 Parameter	Values Tested	Selected
+
 Hidden layer sizes	(64,32), (128,64), (32,16)	(64,32)
+
 Activation	['relu', 'tanh']	'relu'
+
 Dropout rate	[0.1, 0.2, 0.3]	0.2
+
 L2 regularization (α)	[0, 0.001, 0.01, 0.1]	0.01
+
 Learning rate	[0.001, 0.01, 0.1]	0.001
+
 Batch size	[16, 32, 64]	32
+
 Max iterations	[100, 200, 500]	200
+
 Early stopping patience	[5, 10, 15]	10
+
 Training Parameters
+
 Parameter	Value
+
 Optimizer	Adam (β1=0.9, β2=0.999, ε=1e-8)
+
 Learning rate schedule	Constant
+
 Validation fraction	0.2 (of training data)
+
 Class weights	{0: 1.0, 1: 3.0} (inverse frequency)
+
 Random seed	42 (fixed for reproducibility)
 
-##3. Performance Metrics
+3. Performance Metrics
 Primary Metrics (with 95% CI from 2000 bootstrap samples)
+
 Metric	Formula	Threshold
+
 Accuracy	(TP + TN) / N	Youden's index
+
 Sensitivity (Recall)	TP / (TP + FN)	Youden's index
+
 Specificity	TN / (TN + FP)	Youden's index
+
 PPV (Precision)	TP / (TP + FP)	Youden's index
+
 NPV	TN / (TN + FN)	Youden's index
+
 F1-score	2 × (Precision × Recall) / (Precision + Recall)	Youden's index
 ROC-AUC	Area under ROC curve	Threshold-independent
 PR-AUC	Area under precision-recall curve	Threshold-independent
