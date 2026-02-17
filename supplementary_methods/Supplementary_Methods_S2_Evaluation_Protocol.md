@@ -53,7 +53,8 @@ Learning rate schedule	Constant
 Validation fraction	0.2 (of training data)
 Class weights	{0: 1.0, 1: 3.0} (inverse frequency)
 Random seed	42 (fixed for reproducibility)
-3. Performance Metrics
+
+##3. Performance Metrics
 Primary Metrics (with 95% CI from 2000 bootstrap samples)
 Metric	Formula	Threshold
 Accuracy	(TP + TN) / N	Youden's index
@@ -73,7 +74,7 @@ Calibration intercept	α from logit calibration	-0.15
 Decision Curve Analysis
 Net benefit at threshold t:
  Net Benefit = (TP/N) - (FP/N) × (t/(1-t))
-4. Bootstrap Confidence Intervals
+5. Bootstrap Confidence Intervals
 Procedure for each metric:
 
 For each outer fold test set (n ≈ 50):
