@@ -133,7 +133,7 @@ Code publicly available
 Synthetic data for validation
 
 8. Code Availability
-git clone https://github.com/MorillaLab/TopoTransformers
+git clone https://github.com/MorillaLab/TopoAttention
 cd TopoTransformers
 conda env create -f environment.yml
 conda activate topo_lung
