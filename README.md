@@ -17,3 +17,25 @@ The integration of topological features within a transformer-based framework sig
 
 ![TopoTransformers Schema](https://github.com/MorillaLab/TopoTransformers/blob/main/Figure_1.png)
 
+<!-- ============================================== -->
+<div align="left">
+  <h1 id="citation">🎈 Citation</h1>
+  <hr style="height: 3px; background: linear-gradient(90deg, #EF8E8D, #5755A3); border: none; border-radius: 3px;">
+</div>
+
+If you find CoMM-BIP model helpful, please cite us.
+
+```bibtex
+@article {Tran-Dinh2025.10.01.25337124,
+	author = {Tran-Dinh, Alexy and Atchade, Enora and Tanaka, S{\'e}bastien and Lortat-Jacob, Brice and Castier, Yves and Mal, Herv{\'e} and Messika, Jonathan and Mordant, Pierre and Montravers, Philippe and Morilla, Ian},
+	title = {Early Identification of High-Risk Individuals for Mortality after Lung Transplantation: A Retrospective Cohort Study with Topological Transformers},
+	elocation-id = {2025.10.01.25337124},
+	year = {2025},
+	doi = {10.1101/2025.10.01.25337124},
+	publisher = {Cold Spring Harbor Laboratory Press},
+	URL = {https://www.medrxiv.org/content/early/2025/10/03/2025.10.01.25337124},
+	eprint = {https://www.medrxiv.org/content/early/2025/10/03/2025.10.01.25337124.full.pdf},
+	journal = {medRxiv}
+}
+
+```
