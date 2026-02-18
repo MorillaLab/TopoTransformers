@@ -120,7 +120,7 @@
 ## Maintenance
 - **Version control**: GitHub repository with version tags
 - **Updates**: Model will be updated with new data; versioning maintained
-- **Contact**: ian.morilla@uma.es for questions
+- **Contact**: ian.morilla@math.univ-paris13.fr / ian.morilla@ihsm.uma-csic.es for questions
 
 ## References
 - Mitchell et al. (2019) "Model Cards for Model Reporting"
