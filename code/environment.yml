@@ -1,0 +1,54 @@
+name: TopoAttention
+channels:
+  - conda-forge
+  - defaults
+  - pytorch
+dependencies:
+  # Core scientific computing
+  - python=3.9.0
+  - numpy=1.21.0
+  - pandas=1.3.0
+  - scipy=1.7.0
+  - scikit-learn=1.0.0
+  - statsmodels=0.13.0
+  
+  # Visualization
+  - matplotlib=3.4.0
+  - seaborn=0.11.0
+  - plotly=5.3.0
+  
+  # Topological Data Analysis
+  - gudhi=3.7.0
+  - pip
+  
+  # Jupyter environment
+  - jupyter=1.0.0
+  - jupyterlab=3.2.0
+  - ipython=7.27.0
+  - ipykernel=6.4.0
+  - nbconvert=6.1.0
+  - notebook=6.4.0
+  
+  # Utilities
+  - tqdm=4.62.0
+  - joblib=1.0.0
+  - pyyaml=5.4.0
+  
+  # pip packages (not available in conda-forge)
+  - pip:
+    - phate==1.0.11
+    - giotto-tda==0.5.1
+    - shap==0.40.0
+    - eli5==0.11.0
+    - imbalanced-learn==0.8.1
+    - xgboost==1.5.0
+    - lightgbm==3.3.0
+    - catboost==1.0.0
+    - tensorboard==2.7.0
+    - optuna==2.10.0
+    - scikit-plot==0.3.7
+    - pandas-profiling==3.1.0
+    - missingno==0.5.0
+    - yellowbrick==1.4
+    - dython==0.6.4
+    - kaleido==0.2.1  # for static plot exports
