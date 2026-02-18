@@ -1,0 +1,63 @@
+# Git
+.git
+.gitignore
+.github
+
+# Data
+data/raw/
+data/processed/
+data/interim/
+*.csv
+*.xlsx
+*.parquet
+
+# Outputs
+outputs/
+results/
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+.venv
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+.jupyter/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Environment
+environment.yml
+requirements.txt
+conda_env.yaml
+
+# Documentation
+README.md
+LICENSE
+*.pdf
+*.tex
+
+# Secrets
+*.key
+*.pem
+*.crt
