@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  analysis:
+    build: .
+    container_name: TopoAttention
+    volumes:
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+      - ./notebooks:/app/notebooks
+      - ./config.yaml:/app/config.yaml
+    environment:
+      - PYTHONHASHSEED=42
+      - OMP_NUM_THREADS=4
+    command: python run_analysis.py --config config.yaml
+    stdin_open: true
+    tty: true
+
+  jupyter:
+    build: .
+    container_name: topo_lung_jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+      - ./notebooks:/app/notebooks
+      - ./config.yaml:/app/config.yaml
+    environment:
+      - PYTHONHASHSEED=42
+    command: jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''
+    stdin_open: true
+    tty: true
