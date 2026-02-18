@@ -27,7 +27,7 @@ If you find TopoAttention model helpful, please cite us.
 
 ```bibtex
 @article {Tran-Dinh2025.10.01.25337124,
-	author = {Tran-Dinh, Alexy and Atchade, Enora and Tanaka, S{\'e}bastien and Lortat-Jacob, Brice and Castier, Yves and Mal, Herv{\'e} and Messika, Jonathan and Mordant, Pierre and Montravers, Philippe and Morilla, Ian},
+	author = {Tran-Dinh, Alexy and Atchade, Enora and Tanaka, Sébastien and Lortat-Jacob, Brice and Castier, Yves and Mal, Hervé and Messika, Jonathan and Mordant, Pierre and Montravers, Philippe and Morilla, Ian},
 	title = {Early Identification of High-Risk Individuals for Mortality after Lung Transplantation: A Retrospective Cohort Study with Topological Transformers},
 	elocation-id = {2025.10.01.25337124},
 	year = {2025},
