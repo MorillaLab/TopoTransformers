@@ -2,7 +2,7 @@
 # MODEL CARD: Topological Feature Model for Lung Transplantation Mortality Prediction
 
 ## Model Details
-- **Model Name**: TopoTransplant-v1
+- **Model Name**: TopoAttention-v1
 - **Version**: 1.0.0
 - **Date**: March 2025
 - **Model Type**: Multi-Layer Perceptron with topological feature extraction
