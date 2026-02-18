@@ -1,4 +1,4 @@
-# Table S4: Subgroup Performance Analysis\n\n| Subgroup | N | AUC (95% CI) | Sensitivity | Specificity | p-value |\n|----------|---|--------------|-------------|-------------|---------|\n| 
+# Subgroup | N | AUC (95% CI) | Sensitivity | Specificity | p-value | 
 
 Age <50 | 98 | 0.86 (0.78-0.94) | 0.82 | 0.88 | 0.62 |\n| 
 
