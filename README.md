@@ -12,8 +12,6 @@ The proposed model demonstrated superior predictive performance compared to the 
 
 The integration of topological features within a transformer-based framework significantly enhances the prediction of post-transplant mortality risk. By offering both improved predictive power and model transparency, this approach supports more precise and personalised risk stratification in lung transplantation. These findings highlight the potential of topological transformers as a valuable tool in the broader context of precision medicine and clinical decision support.
 
-<img width="468" height="560" alt="image" src="https://github.com/user-attachments/assets/922999cd-ea98-40f1-8b59-fa6ee6d97172" />
-
 
 </div>
 
