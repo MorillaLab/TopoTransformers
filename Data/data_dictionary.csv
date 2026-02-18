@@ -1,0 +1,38 @@
+Variable,Type,Description
+age,continuous,Age in years
+sex,binary,"Sex (0=Female, 1=Male)"
+bmi,continuous,Body mass index (kg/m²)
+copd_etiology,binary,"COPD etiology (0=No, 1=Yes)"
+ild_etiology,binary,"ILD etiology (0=No, 1=Yes)"
+cf_etiology,binary,"Cystic fibrosis etiology (0=No, 1=Yes)"
+other_etiology,binary,"Other etiology (0=No, 1=Yes)"
+diabetes,binary,"Diabetes mellitus (0=No, 1=Yes)"
+cad,binary,"Coronary artery disease (0=No, 1=Yes)"
+mpap,continuous,Mean pulmonary arterial pressure (mmHg)
+cmv_mismatch,binary,"CMV mismatch (Recipient -/Donor +) (0=No, 1=Yes)"
+preop_ecmo,binary,"Pre-operative ECMO (0=No, 1=Yes)"
+helt,binary,"High emergency lung transplantation (0=No, 1=Yes)"
+double_lt,binary,"Double lung transplantation (0=Single, 1=Double)"
+cold_ischemia_time,continuous,Cold ischemia time (minutes)
+tea,binary,"Thoracic epidural analgesia (0=No, 1=Yes)"
+intraop_ecmo,binary,"Intraoperative ECMO (0=No, 1=Yes)"
+intraop_transfusion,binary,"Intraoperative transfusion >2 RBC units (0=No, 1=Yes)"
+sofa_day0,continuous,SOFA score at ICU admission
+saps2_day0,continuous,SAPS2 score at ICU admission
+ne_duration,continuous,Norepinephrine duration (days)
+mv_duration,continuous,Mechanical ventilation duration (days)
+icu_los,continuous,ICU length of stay (days)
+ecmo_duration,continuous,ECMO duration (days)
+grade3_pgd,binary,"Grade 3 primary graft dysfunction (0=No, 1=Yes)"
+acute_renal_failure,binary,"Acute renal failure (0=No, 1=Yes)"
+rrt,binary,"Renal replacement therapy (0=No, 1=Yes)"
+bacteremia,binary,"Bacteremia (0=No, 1=Yes)"
+pneumonia,binary,"Pneumonia (0=No, 1=Yes)"
+vap_esbl_pa,binary,"VAP due to ESBL/PA (0=No, 1=Yes)"
+pleural_empyema,binary,"Pleural empyema (0=No, 1=Yes)"
+bad,binary,"Bronchial anastomosis dehiscence (0=No, 1=Yes)"
+bronchial_stenosis,binary,"Bronchial stenosis (0=No, 1=Yes)"
+acr,binary,"Acute cellular rejection (0=No, 1=Yes)"
+amr,binary,"Antibody-mediated rejection (0=No, 1=Yes)"
+tracheotomy,binary,"Tracheotomy (0=No, 1=Yes)"
+mortality_y1,binary,"1-year mortality (0=Survivor, 1=Non-survivor)"
