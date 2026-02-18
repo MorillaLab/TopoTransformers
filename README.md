@@ -23,7 +23,7 @@ The integration of topological features within a transformer-based framework sig
   <hr style="height: 3px; background: linear-gradient(90deg, #EF8E8D, #5755A3); border: none; border-radius: 3px;">
 </div>
 
-If you find CoMM-BIP model helpful, please cite us.
+If you find TopoAttention model helpful, please cite us.
 
 ```bibtex
 @article {Tran-Dinh2025.10.01.25337124,
