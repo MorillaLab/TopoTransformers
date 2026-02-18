@@ -1,0 +1,101 @@
+# Configuration file for lung transplantation analysis
+
+# Data settings
+data:
+  path: "data/patient_data.csv"
+  synthetic_path: "data/synthetic/synthetic_patient_data.csv"
+  split_manifest: "data/splits/split_manifest.csv"
+  random_seed: 42
+  test_size: 0.2
+  cv_folds: 5
+  nested_cv: true
+
+# Preprocessing
+preprocessing:
+  imputation: "mice"
+  mice_iterations: 10
+  mice_datasets: 5
+  scaling: "standard"
+  feature_selection: "rfe"
+  min_features: 20
+  max_features: 50
+
+# PHATE parameters
+phate:
+  n_components: 2
+  knn: 5
+  decay: 15
+  t: "auto"
+  gamma: 1
+  n_landmark: 2000
+  mds: "metric"
+  random_state: 42
+
+# Topological features
+topology:
+  filtration: "vietoris-rips"
+  max_edge_length: 2.0
+  homology_dimensions: [0, 1, 2]
+  persistence_image:
+    resolution: [100, 100]
+    spread: 1.0
+    sigma: 0.5
+  extractors:
+    - "number_of_points"
+    - "persistence_entropy"
+    - "bottleneck"
+    - "wasserstein"
+    - "landscape"
+    - "betti_curve"
+    - "heat_kernel"
+    - "silhouette"
+    - "persistence_image"
+
+# MLP model
+model:
+  type: "mlp"
+  hidden_layers: [64, 32]
+  activation: "relu"
+  output_activation: "sigmoid"
+  dropout: 0.2
+  l2_regularization: 0.01
+  learning_rate: 0.001
+  batch_size: 32
+  epochs: 200
+  early_stopping_patience: 10
+  class_weight: "balanced"
+  optimizer: "adam"
+
+# Training
+training:
+  validation_split: 0.2
+  shuffle: true
+  random_state: 42
+  n_jobs: -1
+  verbose: 1
+
+# Evaluation
+evaluation:
+  metrics:
+    - "auc"
+    - "accuracy"
+    - "sensitivity"
+    - "specificity"
+    - "ppv"
+    - "npv"
+    - "f1"
+    - "pr_auc"
+    - "brier"
+  bootstrap_iterations: 2000
+  calibration_bins: 10
+  decision_curve_thresholds: [0.0, 0.5, 0.1]
+
+# Output
+output:
+  figures_dir: "outputs/figures"
+  tables_dir: "outputs/tables"
+  models_dir: "outputs/models"
+  supplementary_dir: "outputs/supplementary"
+  save_predictions: true
+  save_model: true
+  save_shap_values: true
