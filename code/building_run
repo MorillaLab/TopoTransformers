@@ -1,0 +1,25 @@
+# Build the Docker image
+docker build -t TopoAttention:latest .
+
+# Run the analysis
+docker run --rm \
+  -v $(pwd)/data:/app/data \
+  -v $(pwd)/outputs:/app/outputs \
+  topo-lung:latest python run_analysis.py
+
+# Run with custom config
+docker run --rm \
+  -v $(pwd)/data:/app/data \
+  -v $(pwd)/outputs:/app/outputs \
+  topo-lung:latest python run_analysis.py --config custom_config.yaml
+
+# Run Jupyter lab
+docker run --rm -p 8888:8888 \
+  -v $(pwd)/data:/app/data \
+  -v $(pwd)/outputs:/app/outputs \
+  -v $(pwd)/notebooks:/app/notebooks \
+  topo-lung:latest jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root
+
+# Using docker-compose
+docker-compose up analysis
+docker-compose up jupyter
