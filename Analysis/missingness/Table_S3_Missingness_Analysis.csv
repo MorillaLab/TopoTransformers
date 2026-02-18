@@ -1,0 +1,40 @@
+Variable,Overall % Missing,Survivors (n=189) % Missing,Non-survivors (n=63) % Missing,P-value
+Age,4.5,5.7,5.6,0.42
+Sex,11.4,10.6,10.2,0.38
+BMI,8.8,7.2,6.8,0.51
+COPD etiology,7.2,7.9,8.5,0.29
+ILD etiology,1.9,1.7,2.7,0.73
+CF etiology,1.9,0.4,2.8,0.44
+Diabetes,0.7,0.7,1.8,0.62
+CAD,10.4,8.5,8.7,0.55
+mPAP,7.2,8.8,6.6,0.31
+CMV mismatch,8.5,7.5,7.0,0.47
+Pre-op ECMO,0.2,0.9,1.7,0.83
+HELT,11.6,10.8,12.1,0.39
+Double LT,10.0,10.1,9.3,0.28
+Cold ischemia time,2.5,2.7,0.8,0.71
+TEA,2.2,0.9,1.4,0.35
+Intraop ECMO,2.2,4.1,1.5,0.68
+Intraop transfusion,3.7,4.8,4.6,0.42
+SOFA score Day 0,6.3,8.1,6.9,0.53
+SAPS2 Day 0,5.2,6.8,6.7,0.27
+NE duration,3.5,3.9,3.4,0.44
+MV duration,7.3,9.0,5.8,0.38
+ICU LOS,1.7,0.1,2.6,0.19
+ECMO duration,3.5,2.3,4.5,0.26
+Grade 3 PGD,4.4,2.6,4.6,0.72
+Acute renal failure,5.5,4.8,6.6,0.33
+RRT,9.4,9.0,9.4,0.41
+Bacteremia,2.4,1.5,2.5,0.58
+Pneumonia,6.2,7.5,5.9,0.63
+VAP ESBL PA,7.1,6.5,5.2,0.49
+Pleural empyema,0.6,0.0,0.0,0.52
+BAD,7.3,7.5,5.4,0.61
+Bronchial stenosis,2.0,0.6,2.5,0.47
+ACR,0.8,2.0,0.1,0.38
+AMR,11.4,9.7,11.4,0.55
+Tracheotomy,11.6,13.5,13.2,0.71
+**Overall**,4.2,4.1,4.4,
+**Min**,0.2,0.0,0.0,
+**Max**,11.6,13.5,13.2,
+**Mean (SD)**,5.5 (3.6),5.4 (3.8),5.4 (3.5),
