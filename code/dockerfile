@@ -1,0 +1,88 @@
+# Dockerfile for Topological Lung Transplantation Analysis
+# Base image: Python 3.9 slim
+FROM python:3.9-slim-bullseye
+
+# Set working directory
+WORKDIR /app
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PYTHONFAULTHANDLER=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    gcc \
+    g++ \
+    make \
+    cmake \
+    libboost-all-dev \
+    libeigen3-dev \
+    libgmp-dev \
+    libmpfr-dev \
+    libcgal-dev \
+    wget \
+    curl \
+    git \
+    ca-certificates \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    libgomp1 \
+    libopenblas-dev \
+    liblapack-dev \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements first for better caching
+COPY requirements.txt /app/requirements.txt
+
+# Install Python dependencies
+RUN pip install --upgrade pip setuptools wheel && \
+    pip install -r requirements.txt
+
+# Install GUDHI from source (for latest version with all features)
+RUN cd /tmp && \
+    wget https://github.com/GUDHI/gudhi-devel/archive/refs/tags/tags/gudhi-release-3.7.0.tar.gz && \
+    tar -xzf gudhi-release-3.7.0.tar.gz && \
+    cd gudhi-devel-tags-gudhi-release-3.7.0 && \
+    mkdir build && cd build && \
+    cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DPYTHON_EXECUTABLE=/usr/local/bin/python .. && \
+    make -j4 && \
+    make install && \
+    cd /app && \
+    rm -rf /tmp/gudhi-devel-tags-gudhi-release-3.7.0*
+
+# Install giotto-tda from pip (already in requirements, but ensure it's fresh)
+RUN pip install --no-cache-dir --upgrade giotto-tda
+
+# Copy application code
+COPY . /app/
+
+# Create directories for outputs
+RUN mkdir -p /app/outputs/figures \
+    /app/outputs/tables \
+    /app/outputs/models \
+    /app/outputs/supplementary \
+    /app/data/synthetic \
+    /app/data/splits
+
+# Set non-root user for security
+RUN useradd -m -u 1000 analyst && \
+    chown -R analyst:analyst /app
+USER analyst
+
+# Set environment variables for reproducibility
+ENV PYTHONHASHSEED=42 \
+    OMP_NUM_THREADS=4 \
+    OPENBLAS_NUM_THREADS=4 \
+    MKL_NUM_THREADS=4 \
+    NUMEXPR_NUM_THREADS=4
+
+# Default command
+CMD ["python", "run_analysis.py", "--config", "config.yaml"]
