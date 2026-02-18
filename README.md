@@ -2,8 +2,7 @@
 [![License](https://img.shields.io/badge/License-GPLv3-green)](https://choosealicense.com/licenses/gpl-3.0/)
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/MorillaLab/TopoAttention/)
   
-[Tran-Dinh et al. **Early Identification of High-Risk Individuals for Mortality after Lung Transplantation: A Retrospective Cohort Study with Topological Feature Engineering**. 2025. *medRxiv*.](
-[Gouiaa et al.  **Novel dimensionality reduction method, Taelcore, enhances lung transplantation risk prediction**. 2024. *Computers in Biology and Medicine*.](https://www.medrxiv.org/content/10.1101/2025.10.01.25337124v1)👁️
+[Tran-Dinh et al. **Early Identification of High-Risk Individuals for Mortality after Lung Transplantation: A Retrospective Cohort Study with Topological Feature Engineering**. 2025. *medRxiv*.](https://www.medrxiv.org/content/10.1101/2025.10.01.25337124v1)👁️
 
 Lung transplantation remains the only definitive treatment for patients with end-stage respiratory failure; however, it is burdened by a substantial risk of post-operative mortality. Current risk stratification methods, such as the Lung Transplant Risk Index, offer limited predictive performance and interpretability. This study introduces a novel predictive model based on topological transformers to assess mortality risk following lung transplantation. The objective is to improve predictive accuracy by capturing complex temporal patterns in clinical data while ensuring model interpretability to inform clinical decisions. 
 
