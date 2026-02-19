@@ -1,0 +1,82 @@
+
+---
+
+## 3. `CITATION.cff` - Citation File Format
+
+```yaml
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Topological Feature Engineering for Lung Transplantation Mortality Prediction"
+version: 1.0.0
+doi: 10.5281/zenodo.18699204
+date-released: 2025-03-01
+url: "https://github.com/MorillaLab/TopoAttention"
+
+authors:
+  - family-names: "Morilla"
+    given-names: "Ian"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "Université Sorbonne Paris Nord, CNRS, LAGA"
+    
+  - family-names: "Tran-Dinh"
+    given-names: "Alexy"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "Université Paris Cité, AP-HP, Hôpital Bichat Claude Bernard"
+    
+  - family-names: "Atchade"
+    given-names: "Enora"
+    affiliation: "Université Paris Cité, AP-HP, Hôpital Bichat Claude Bernard"
+    
+  - family-names: "Tanaka"
+    given-names: "Sébastien"
+    affiliation: "Université Paris Cité, INSERM"
+    
+  - family-names: "Lortat-Jacob"
+    given-names: "Brice"
+    affiliation: "Université Paris Cité, AP-HP, Hôpital Bichat Claude Bernard"
+    
+  - family-names: "Castier"
+    given-names: "Yves"
+    affiliation: "Université Paris Cité, AP-HP, Hôpital Bichat Claude Bernard"
+    
+  - family-names: "Mal"
+    given-names: "Hervé"
+    affiliation: "Université Paris Cité, AP-HP, Hôpital Bichat Claude Bernard"
+    
+  - family-names: "Messika"
+    given-names: "Jonathan"
+    affiliation: "Université Paris Cité, AP-HP, Hôpital Bichat Claude Bernard"
+    
+  - family-names: "Mordant"
+    given-names: "Pierre"
+    affiliation: "Université Paris Cité, AP-HP, Hôpital Bichat Claude Bernard"
+    
+  - family-names: "Montravers"
+    given-names: "Philippe"
+    affiliation: "Université Paris Cité, AP-HP, Hôpital Bichat Claude Bernard"
+
+keywords:
+  - "lung transplantation"
+  - "mortality prediction"
+  - "topological data analysis"
+  - "machine learning"
+  - "persistent homology"
+  - "clinical decision support"
+
+license: "MIT"
+
+repository-code: "https://github.com/MorillaLab/TopoAttention"
+
+abstract: "This package contains the complete code, models, and documentation for predicting one-year mortality after lung transplantation using topological feature engineering. The model integrates persistent homology with machine learning to achieve superior performance (AUC=0.87) compared to traditional clinical risk scores."
+
+references:
+  - type: article
+    authors:
+      - family-names: "Morilla"
+        given-names: "Ian"
+      - family-names: "Tran-Dinh"
+        given-names: "Alexy"
+    title: "Early Identification of High-Risk Individuals for Mortality after Lung Transplantation: A Retrospective Cohort Study with Topological Feature Engineering"
+    journal: "PLOS Digital Health"
+    year: 2025
+    doi: 10.xxxx/plosdigitalhealth.xxxxxx
