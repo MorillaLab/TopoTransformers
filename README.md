@@ -38,4 +38,14 @@ If you find TopoAttention model helpful, please cite us.
 	journal = {medRxiv}
 }
 
+@software{morilla2026TopoAttention,
+    author = {Morilla, Ian and Tran-Dinh, Alexy},
+    title = {Topological Feature Engineering for Lung Transplantation Mortality Prediction},
+    year = {2026},
+    publisher = {Zenodo},
+    version = {v1.0.0},
+    doi = {10.5281/zenodo.18699204},
+    url = {https://doi.org/10.5281/zenodo.18699204}
+}
+
 ```
