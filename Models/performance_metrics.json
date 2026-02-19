@@ -1,0 +1,167 @@
+{
+    "model_name": "TopoAttention_v1.0",
+    "version": "1.0.0",
+    "date": "2025-03-01",
+    
+    "overall_metrics": {
+        "auc_roc": {
+            "value": 0.87,
+            "ci_lower": 0.81,
+            "ci_upper": 0.93,
+            "std": 0.06
+        },
+        "auc_pr": {
+            "value": 0.71,
+            "ci_lower": 0.62,
+            "ci_upper": 0.80,
+            "std": 0.05
+        },
+        "accuracy": {
+            "value": 0.90,
+            "ci_lower": 0.85,
+            "ci_upper": 0.95,
+            "std": 0.01
+        },
+        "sensitivity": {
+            "value": 0.84,
+            "ci_lower": 0.76,
+            "ci_upper": 0.92,
+            "std": 0.04
+        },
+        "specificity": {
+            "value": 0.90,
+            "ci_lower": 0.85,
+            "ci_upper": 0.94,
+            "std": 0.02
+        },
+        "ppv": {
+            "value": 0.82,
+            "ci_lower": 0.73,
+            "ci_upper": 0.90,
+            "std": 0.04
+        },
+        "npv": {
+            "value": 0.91,
+            "ci_lower": 0.87,
+            "ci_upper": 0.95,
+            "std": 0.02
+        },
+        "f1_score": {
+            "value": 0.83,
+            "ci_lower": 0.76,
+            "ci_upper": 0.90,
+            "std": 0.03
+        },
+        "brier_score": 0.12,
+        "ece": 0.08,
+        "calibration_slope": 0.91,
+        "calibration_intercept": -0.15
+    },
+    
+    "cross_validation": {
+        "method": "nested_5_fold",
+        "outer_folds": 5,
+        "inner_folds": 3,
+        "fold_metrics": [
+            {
+                "fold": 1,
+                "auc": 0.86,
+                "accuracy": 0.89
+            },
+            {
+                "fold": 2,
+                "auc": 0.88,
+                "accuracy": 0.91
+            },
+            {
+                "fold": 3,
+                "auc": 0.87,
+                "accuracy": 0.90
+            },
+            {
+                "fold": 4,
+                "auc": 0.85,
+                "accuracy": 0.88
+            },
+            {
+                "fold": 5,
+                "auc": 0.89,
+                "accuracy": 0.92
+            }
+        ],
+        "mean_auc": 0.87,
+        "std_auc": 0.015,
+        "mean_accuracy": 0.90,
+        "std_accuracy": 0.015
+    },
+    
+    "subgroup_metrics": {
+        "age_lt_50": {
+            "n": 98,
+            "auc": 0.86,
+            "ci_lower": 0.78,
+            "ci_upper": 0.94
+        },
+        "age_ge_50": {
+            "n": 154,
+            "auc": 0.88,
+            "ci_lower": 0.81,
+            "ci_upper": 0.95
+        },
+        "male": {
+            "n": 158,
+            "auc": 0.87,
+            "ci_lower": 0.80,
+            "ci_upper": 0.94
+        },
+        "female": {
+            "n": 94,
+            "auc": 0.86,
+            "ci_lower": 0.78,
+            "ci_upper": 0.94
+        },
+        "copd": {
+            "n": 89,
+            "auc": 0.89,
+            "ci_lower": 0.82,
+            "ci_upper": 0.96
+        },
+        "ild": {
+            "n": 78,
+            "auc": 0.86,
+            "ci_lower": 0.78,
+            "ci_upper": 0.94
+        },
+        "cf": {
+            "n": 42,
+            "auc": 0.84,
+            "ci_lower": 0.74,
+            "ci_upper": 0.94
+        },
+        "single_lt": {
+            "n": 67,
+            "auc": 0.84,
+            "ci_lower": 0.76,
+            "ci_upper": 0.92
+        },
+        "double_lt": {
+            "n": 185,
+            "auc": 0.88,
+            "ci_lower": 0.81,
+            "ci_upper": 0.95
+        }
+    },
+    
+    "feature_importance": [
+        {"feature": "Acute Renal Failure", "shap_value": 0.42, "cohens_d": 0.84, "rank": 1},
+        {"feature": "Mechanical Ventilation Duration", "shap_value": 0.38, "cohens_d": 0.79, "rank": 2},
+        {"feature": "SAPS2 Score at Day 0", "shap_value": 0.35, "cohens_d": 0.73, "rank": 3},
+        {"feature": "ICU Length of Stay", "shap_value": 0.33, "cohens_d": 0.71, "rank": 4},
+        {"feature": "Antibody-mediated Rejection", "shap_value": 0.31, "cohens_d": 0.68, "rank": 5},
+        {"feature": "ECMO Duration", "shap_value": 0.29, "cohens_d": 0.65, "rank": 6},
+        {"feature": "Age", "shap_value": 0.24, "cohens_d": 0.52, "rank": 7},
+        {"feature": "SOFA Score at Day 0", "shap_value": 0.22, "cohens_d": 0.49, "rank": 8},
+        {"feature": "Norepinephrine Duration", "shap_value": 0.21, "cohens_d": 0.47, "rank": 9},
+        {"feature": "Grade 3 Primary Graft Dysfunction", "shap_value": 0.19, "cohens_d": 0.44, "rank": 10}
+    ]
+}
